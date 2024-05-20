@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  html,
+  body {
+    @apply bg-dark-1 text-white min-h-screen font-inter custom-scrollbar;
+  }
+}
+
+@layer utilities {
+  .h2-bold {
+    @apply text-[30px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .h3-bold {
+    @apply text-[24px] font-bold leading-[140%] tracking-tighter;
+  }
+
+  .header {
+    @apply flex flex-col items-center py-10 px-5 md:p-14;
+  }
+
+  .header-inner_container {
+    @apply max-w-5xl flex flex-col items-center w-full gap-6 md:gap-9;
+  }
+
+  .header-left {
+    @apply flex items-center gap-4;
+  }
+
+  .header-search {
+    @apply h-12 w-full bg-dark-4 border-none placeholder:text-light-4 text-white  rounded-lg px-3 focus:outline-none focus:ring-2 focus:ring-dark-4 focus:ring-opacity-50;
+  }
+
+  .grid-container-wrapper {
+    @apply px-6 md:px-10 pb-16;
+  }
+
+  .grid-container {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-6;
+  }
+
+  .project-card {
+    @apply relative shadow-lg rounded-xl overflow-hidden h-72;
+  }
+
+  .project-image_container {
+    @apply flex flex-col rounded-xl border border-dark-4 overflow-hidden cursor-pointer w-full h-full transition-transform duration-300 transform hover:scale-105;
+  }
+
+  .project-image {
+    @apply w-full h-full;
+  }
+
+  .project-expand_container {
+    @apply absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300;
+  }
+
+  .project-expand_icon {
+    @apply text-white;
+  }
+
+  .title-container {
+    @apply absolute bottom-0 left-0 right-0 px-5 py-3 bg-black bg-opacity-50 text-white;
+  }
+
+  .project-title {
+    @apply text-lg font-semibold;
+  }
+
+  .project-links {
+    @apply absolute bottom-0 p-5 w-full flex justify-end gap-4 bg-gradient-to-t from-dark-3 to-transparent rounded-b-xl;
+  }
+
+  .link-icon {
+    @apply cursor-pointer;
+  }
+
+  /* Custom Scrollbar */
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+    border-radius: 2px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #09090a;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #5c5c7b;
+    border-radius: 50px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #7878a3;
+  }
+}

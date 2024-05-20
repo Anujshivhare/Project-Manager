@@ -1,0 +1,24 @@
+export { default as Search } from "./icons/search.svg";
+
+export { default as Logo } from "./images/logo.webp";
+export { default as ChallengesApp } from "./images/Challenges App.png";
+export { default as Counter1 } from "./images/Counter 1.png";
+export { default as Counter2 } from "./images/Counter 2.png";
+export { default as DigitalClock } from "./images/Digital Clock.png";
+export { default as DrumKit } from "./images/Drum Kit.png";
+export { default as ElegantContext } from "./images/Elegant Context.png";
+export { default as EventsApp } from "./images/Events App.png";
+export { default as FoodOrder } from "./images/FoodOrder.png";
+export { default as Forkify } from "./images/Forkify.png";
+export { default as GuessMyNumber } from "./images/Guess My Number.png";
+export { default as InvestmentCalculator } from "./images/Investment Calculator.png";
+export { default as MystiqueQuiz } from "./images/Mystique Quiz.png";
+export { default as PlacePicker } from "./images/Place Picker.png";
+export { default as Quiz } from "./images/Quiz.png";
+export { default as RandomColorGenerator } from "./images/Random Color Generator.png";
+export { default as RandomPasswordGenerator } from "./images/Random Password Generator.png";
+export { default as ReactEssentials } from "./images/React Essentials.png";
+export { default as ReactForms } from "./images/React Forms.png";
+export { default as TaskManager } from "./images/Task Manager.png";
+export { default as TicTacToe } from "./images/Tic-Tac-Toe.png";
+export { default as TimerGame } from "./images/Timer Game.png";
